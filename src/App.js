@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import GlobalStyle from "./global";
+import { StyledDiv } from "./global";
+import "./reset.css"
+import Button from "./Components/Button";
+import { Fragment } from "react";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <GlobalStyle/>
+      <StyledDiv>
+        <Button/>
+      </StyledDiv>
+      <StyledDiv>
+        <Button variant="outline"/>
+      </StyledDiv>
+      <StyledDiv>
+        <Button variant="text"/>
+      </StyledDiv>
+      <StyledDiv>
+        <Button disabledShadow/>
+      </StyledDiv>
+      <StyledDiv>
+      <Button disabled/>
+      <Button disabled variant="text"/>
+    </StyledDiv>
+    </Fragment>
   );
 }
 
