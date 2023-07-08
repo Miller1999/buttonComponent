@@ -23,13 +23,26 @@ const GlobalStyle = createGlobalStyle`
     body{
         width:100%;
         height:100vh;
+        padding:20px 150px;
+    }
+    h1{
+        font-family: "Raleway";
+        font-weight:900;
+        font-size:40px;
+    }
+    h2{
+        padding:20px;
+        font-family: "Raleway";
+        font-weight:900;
+        font-size:20px;
+        color:gray;
     }
 `
 export const StyledDiv = styled.div`
     display:flex;
     align-items:center;
-    justify-content:space-around;
     padding:50px;
+    gap:30px;
 `
 
 export default GlobalStyle
