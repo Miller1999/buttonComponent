@@ -48,6 +48,7 @@ function App() {
         <Button color="secondary"/>
         <Button color="danger"/>
       </StyledDiv>
+      <h2 style={{textAlign:"center"}}>Developed by Miller Arias - Miller1999</h2>
     </Fragment>
   );
 }
